@@ -5,18 +5,22 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@nearpaydev/react-native-nearpay-sdk": "github:nearpayio/nearpay-react-native-sdk#google",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@sentry/react-native": "^6.13.1",
     "expo": "~53.0.7",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
     "react-native": "0.79.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@types/react": "~19.0.10"
   },
   "private": true
 }
